@@ -1,9 +1,9 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  reactStrictMode: true, // Helps with debugging
+  reactStrictMode: true,
   experimental: {
-    // ppr: 'incremental',
+    ppr: 'incremental',
   },
   async headers() {
     return [
